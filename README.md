@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project aims to predict individual income levels based on demographic and socioeconomic factors using the well-known Adult dataset from 1996. By building and evaluating several machine learning models, we seek to identify the factors most strongly correlated with income and create a robust predictive system.
+This project focuses on predicting individual income levels based on demographic and socioeconomic factors using the Adult dataset from 1996. By building and evaluating several machine learning models, the goal is to identify the factors most strongly correlated with income and create a robust predictive system.
 
 ## Problem Statement
 
-The primary objective is to analyze and develop a model to predict whether an individual's income exceeds $50,000, using features such as age, education, occupation, and more.
+The objective is to develop a model that predicts whether an individual's income exceeds $50,000 using features such as age, education, occupation, and other relevant factors.
 
 Dataset source: [Adult dataset details](https://www.cs.toronto.edu/~delve/data/adult/adultDetail.html)
 
@@ -18,10 +18,25 @@ Our **exploratory data analysis (EDA)** revealed several key patterns:
 
 - **Age, education, and hours worked per week** show strong correlations with income levels.
   ![Correlation between numeric features and income](<Screenshot 2024-10-19 at 12.25.53 PM.png>)
+  _This heatmap shows the correlation between numeric features. We observe that age, hours-per-week, and educational-num have moderate positive correlations with income, indicating that these factors are good predictors of higher income. This justifies their inclusion in the model._
+
+  &nbsp;<br>
+
   ![Age distribution across income levels](<Screenshot 2024-10-19 at 12.18.02 PM.png>)
-- Education, Workclass & occupation, and marital status also seems to be a factor for the incom level.
+  _This violin plot highlights the distribution of ages across income groups. It shows that higher-income individuals tend to be older, particularly between the ages of 35 and 50. This further supports the insight that age is a significant predictor of income._
+
+  &nbsp;<br>
+
+- Education, workclass & occupation, and marital status also appear to influence income levels:
   ![Comparision of income by workclass and occupation](<Screenshot 2024-10-19 at 12.31.14 PM.png>)
+  _The bar plot shows the income distribution across workclass and occupation. We see that managerial and professional occupations are associated with higher income levels. This insight highlights the importance of occupation in determining income, as higher-skilled professions tend to lead to higher earnings._
+
+  &nbsp;<br>
+
   ![Analysis of relationship status and income levels](<Screenshot 2024-10-19 at 12.35.13 PM.png>)
+  _This analysis of relationship status versus income reveals that married individuals, especially those in dual-income households, are more likely to be high earners. This provides additional evidence that marital status is a significant predictor of income._
+
+  &nbsp;<br>
 
 These insights guided us in selecting the most important features for model development.
 
@@ -44,13 +59,25 @@ With these insights, we built several predictive models to classify whether an i
 
 ### 4. Model Performance: Measuring Success
 
-Through **cross-validation** and **hyperparameter tuning**, we optimized our models for better performance. The **Random Forest** and **Gradient Boosting** models both achieved exceptional accuracy and precision. While **Logistic Regression** was useful for initial insights, its performance was surpassed by tree-based methods.
+Through **cross-validation** and **hyperparameter tuning**, we optimized the models for better performance. Both **Random Forest** and **Gradient Boosting** models achieved high accuracy and precision, outperforming the Logistic Regression model. The tree-based models were able to capture more complex relationships between the variables.
+
+#### Feature Importance Analysis
+
+The following chart highlights the top 10 most important features for predicting income levels using the Decision Tree model:
+
+![Top 10 feature importance](<Screenshot 2024-10-19 at 1.03.37 PM.png>)
+
+As seen in the chart, features such as marital status, education, and age are the strongest predictors of income, which align with our initial findings in the exploratory analysis.
 
 ### 5. Conclusion: Insights Beyond Prediction
 
-This project not only developed a reliable model for income classification but also deepened our understanding of the factors driving income inequality. **Education, occupation, and marital status** consistently emerged as the most impactful variables, shaping both the model’s success and our understanding of the data.
+This project successfully developed a reliable model for income classification, but it also deepened our understanding of the factors driving income inequality. **Education**, **occupation**, and **marital status** consistently emerged as the most impactful variables, both for prediction and understanding socioeconomic disparities.
 
-Future work could explore more complex relationships, such as interaction effects between demographic variables, or expand the model to other domains like predicting income in different industries or regions.
+Future directions for this project could include:
+
+- Exploring interaction effects between demographic variables.
+- Extending the model to predict income across different industries or regions.
+- Using more advanced models, such as neural networks, to capture additional complexities in the data.
 
 ## Tools and Libraries
 
