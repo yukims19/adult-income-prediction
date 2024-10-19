@@ -17,16 +17,22 @@ Dataset source: [Adult dataset details](https://www.cs.toronto.edu/~delve/data/a
 Our **exploratory data analysis (EDA)** revealed several key patterns:
 
 - **Age, education, and hours worked per week** show strong correlations with income levels.
-- Individuals with higher educational attainment and those working longer hours tend to have higher incomes.
+  ![Correlation between numeric features and income](<Screenshot 2024-10-19 at 12.25.53 PM.png>)
+  ![Age distribution across income levels](<Screenshot 2024-10-19 at 12.18.02 PM.png>)
+- Education, Workclass & occupation, and marital status also seems to be a factor for the incom level.
+  ![Comparision of income by workclass and occupation](<Screenshot 2024-10-19 at 12.31.14 PM.png>)
+  ![Analysis of relationship status and income levels](<Screenshot 2024-10-19 at 12.35.13 PM.png>)
 
 These insights guided us in selecting the most important features for model development.
 
 ### 2. Identifying Key Factors: What Influences Income the Most?
 
-Using statistical tests, we identified several significant differences between high-income and low-income individuals:
+Through statistical tests, we found significant differences between individuals earning above and below $50,000:
 
-- **Marital status** proved to be a strong indicator, with married individuals, especially in dual-income households, more likely to be high earners.
-- **Occupation** and **work hours** also played critical roles, with managerial roles being particularly associated with higher income levels.
+- Marital status: Married individuals, especially in dual-income households, were more likely to be high earners.
+- Education: Higher educational attainment was associated with higher income.
+- Age: Older individuals were more likely to earn more.
+- Occupation and work hours: Managerial roles and longer work hours correlated strongly with higher income.
 
 ### 3. Building Predictive Models: From Insights to Action
 
