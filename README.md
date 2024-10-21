@@ -17,23 +17,23 @@ Dataset source: [Adult dataset details](https://www.cs.toronto.edu/~delve/data/a
 Our **exploratory data analysis (EDA)** revealed several key patterns:
 
 - **Age, education, and hours worked per week** show strong correlations with income levels.
-  ![Correlation between numeric features and income](<Screenshot 2024-10-19 at 12.25.53 PM.png>)
+  ![Correlation between numeric features and income](<images/Screenshot 2024-10-19 at 12.25.53 PM.png>)
   _This heatmap shows the correlation between numeric features. We observe that age, hours-per-week, and educational-num have moderate positive correlations with income, indicating that these factors are good predictors of higher income. This justifies their inclusion in the model._
 
   &nbsp;<br>
 
-  ![Age distribution across income levels](<Screenshot 2024-10-19 at 12.18.02 PM.png>)
+  ![Age distribution across income levels](<images/Screenshot 2024-10-19 at 12.18.02 PM.png>)
   _This violin plot highlights the distribution of ages across income groups. It shows that higher-income individuals tend to be older, particularly between the ages of 35 and 50. This further supports the insight that age is a significant predictor of income._
 
   &nbsp;<br>
 
 - Education, workclass & occupation, and marital status also appear to influence income levels:
-  ![Comparision of income by workclass and occupation](<Screenshot 2024-10-19 at 12.31.14 PM.png>)
+  ![Comparision of income by workclass and occupation](<images/Screenshot 2024-10-19 at 12.31.14 PM.png>)
   _The bar plot shows the income distribution across workclass and occupation. We see that managerial and professional occupations are associated with higher income levels. This insight highlights the importance of occupation in determining income, as higher-skilled professions tend to lead to higher earnings._
 
   &nbsp;<br>
 
-  ![Analysis of relationship status and income levels](<Screenshot 2024-10-19 at 12.35.13 PM.png>)
+  ![Analysis of relationship status and income levels](<images/Screenshot 2024-10-19 at 12.35.13 PM.png>)
   _This analysis of relationship status versus income reveals that married individuals, especially those in dual-income households, are more likely to be high earners. This provides additional evidence that marital status is a significant predictor of income._
 
   &nbsp;<br>
@@ -65,7 +65,7 @@ Through **cross-validation** and **hyperparameter tuning**, we optimized the mod
 
 The following chart highlights the top 10 most important features for predicting income levels using the Decision Tree model:
 
-![Top 10 feature importance](<Screenshot 2024-10-19 at 1.03.37 PM.png>)
+![Top 10 feature importance](<images/Screenshot 2024-10-19 at 1.03.37 PM.png>)
 
 As seen in the chart, features such as marital status, education, and age are the strongest predictors of income, which align with our initial findings in the exploratory analysis.
 
