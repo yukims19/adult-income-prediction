@@ -4,6 +4,10 @@
 
 This project focuses on predicting individual income levels based on demographic and socioeconomic factors using the Adult dataset from 1996. By building and evaluating several machine learning models, the goal is to identify the factors most strongly correlated with income and create a robust predictive system.
 
+[Explore the web app here!](https://income-prediction-app.vercel.app/)
+
+![Screen Recording 2024-10-30 at 9 32 08 AM](https://github.com/user-attachments/assets/9481183e-a3ff-4d48-a74a-b2545078dfad)
+
 ## Problem Statement
 
 The objective is to develop a model that predicts whether an individual's income exceeds $50,000 using features such as age, education, occupation, and other relevant factors.
